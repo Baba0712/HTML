@@ -2,11 +2,11 @@ HTML stands for Hypertext Markup Language.
 Hypertext Markup Language or HTML is a markup language which is used to create website templates or WebPages to present the content on the World Wide Web. HTML pages are saved by adding .html or .html in web page name.
 The basic structure of the HTML template is:
 <html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-  </body>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	</body>
 </html>
 =========================================================================
 What Is The Difference Between HTML Elements And Tags?
@@ -55,7 +55,7 @@ In cases wherein their operating system does not support a particular character,
 How do you change the number type in the middle of a list?
 The 
 <li>
-  tag includes two attributes – type and value. The type attribute can be used to change the numbering type for any list item. The value attribute can change the number index.
+	tag includes two attributes – type and value. The type attribute can be used to change the numbering type for any list item. The value attribute can change the number index.
 =========================================================================
 What are style sheets?
 Style sheets enable you to build consistent, transportable, and well-defined style templates. These templates can be linked to several different web pages, making it easy to maintain and change the look and feel of all the web pages within site.
@@ -77,7 +77,7 @@ You can specify a border color using style sheets, but the colors for a table th
 =========================================================================
 How do you create a link that will connect to another web page when clicked?
 To create hyperlinks, or links that connect to another web page, use the href tag. The general format for this is: 
-  <a href=”site”>text</a>
+<a href=”site”>text</a>
 Replace “site” with the actual page URL that is supposed to be linked to when the text is clicked.
 =========================================================================
 What other ways can be used to align images and wrap text?
@@ -85,7 +85,7 @@ Tables can be used to position text and images. Another useful way to wrap text 
 =========================================================================
 Can a single text link point to two different web pages?
 No. The 
-  <a>
+<a>
 tag can accept only a single href attribute, and it can point to only a single web page.
 =========================================================================
 What is the difference between the directory and menu lists and the unordered list?
@@ -220,7 +220,6 @@ Write an HTML code to form a table to show the below values in a tabular form wi
 1, Ram, Physics
 2, Shyam, Math
 3, Murli, Chemistry
-
 Ans: To represent the above values in an HTML table format, the code will be:
 <!DOCTYPE html>
 <html>
@@ -277,8 +276,8 @@ The commented out lines will not be shown in the browser. To comment a line, the
 For Example:
 <!-- This is one line comment -->
 <!-- This is multiple
-  line of two or
-  more line -->
+	line of two or
+	more line -->
 =========================================================================
 What are inline elements and block-level elements in HTML?
 Ans: 
@@ -330,7 +329,7 @@ font-weight: 600;
 }
 </style>
 <script type="text/javascript">
-  <!-- Javascript code will be written into these -->
+	<!-- Javascript code will be written into these -->
 </script>
 </head>
 <body>
@@ -375,14 +374,12 @@ color: #0070ff;
 </ol>
 </body>
 </html>
-
 Output:
 ordered-list :
 1.HTML
 2.CSS
 3.Bootstrap
 4.JavaScript
-
 Unordered List:
 <!DOCTYPE html>
 <html>
@@ -407,14 +404,12 @@ color: #0070ff;
 </ul>
 </body>
 </html>
-
 Output:
 Unordered-list :
 *HTML
 *CSS
 *Bootstrap
 *JavaScript
-
 Definition List:
 <!DOCTYPE html>
 <html>
@@ -575,13 +570,13 @@ Ans: HTML Google maps allow us to display Google maps on our web page:
 <div id="map" style="width: 400px; height: 400px; background: yellow">
 </div>
 <script>
-  function myMap() {
-  var mapOptions = {
-             center: new google.maps.LatLng(51.5, -0.12),
-            zoom: 10
-  }
-       var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  }
+	function myMap() {
+	var mapOptions = {
+	           center: new google.maps.LatLng(51.5, -0.12),
+	          zoom: 10
+	}
+	     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
 </script>
 <script src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 </body>
@@ -612,10 +607,10 @@ Example:
 <canvas id="myCanvas" width="300" height="200" style="border:1px solid #d3d3d3; color: #c9cc18;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 <script>
-  var can = document.getElementById("myCanvas");
-  var canvas = can.getContext("2d");
-  canvas.font = "20px Hind-sanserif";
-  canvas.fillText("Canvas Example",30,60);
+	var can = document.getElementById("myCanvas");
+	var canvas = can.getContext("2d");
+	canvas.font = "20px Hind-sanserif";
+	canvas.fillText("Canvas Example",30,60);
 </script>
 </body>
 </html>
@@ -743,7 +738,7 @@ How Can We Create A New HTML Element?
 Answer.
 We can even create new elements for the document as follows.
 <script>
-  document.createElement﴾"myElement"﴿
+	document.createElement﴾"myElement"﴿
 </script>
 It can be used in the HTML as.
 <myElement>hello</myElement>
@@ -854,10 +849,10 @@ If the javascript file specified in the above code exists, the browser spawns a 
 Once the Web worker gets spawned, it starts the communication with the parent page, using the postMessage() method. The Web worker, in turn, returns a message, that gets accessed using the onmessage() event on the main page.
 Let’s take an example, where the script spawns a Web worker to execute a loop having thousands of iterations. After that, the Web worker returns the calculated value to the HTML page.
 <script>
-  var worker = new Worker('calculateLoop.js');
-  worker.onmessage = function (event) {
-  alert("Completed " + event.data + "iterations" );
-  }; 
+	var worker = new Worker('calculateLoop.js');
+	worker.onmessage = function (event) {
+	alert("Completed " + event.data + "iterations" );
+	}; 
 </script>
 Below is the code of “calculateLoop.js” file. It makes use of postMessage() API, to pass the communication back to the HTML page.
 for (var i = 0; i <= 1000000000; i += 1){
